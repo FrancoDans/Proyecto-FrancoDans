@@ -1,0 +1,36 @@
+
+
+.header {
+    width: 97%;
+    min-height: 100px;
+    max-width: 1530px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    box-shadow: border-box;
+    background-color: white;
+    box-shadow: 05px 10px blue;
+
+
+    nav {
+        ul {
+            
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0;
+            
+
+            li {
+                font-weight: 10000;
+                text-transform: uppercase;
+                padding: 16px;
+                list-style: none;
+                
+                
+            }
+        }
+    }
+}

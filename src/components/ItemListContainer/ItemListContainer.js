@@ -4,6 +4,7 @@ import { ItemList } from '../ItemList/ItemList'
 import { Loader } from '../Loader/Loader'
 import { collection, getDocs, query, where } from 'firebase/firestore/lite'
 import { db } from '../../firebase/config'
+import miFooter from '../footer/miFooter'
 
 export const ItemListContainer = () => {
 
@@ -40,8 +41,10 @@ export const ItemListContainer = () => {
             {
                 loading 
                     ? <Loader/>
-                    : <ItemList items={productos}/>
+                    : <ItemList items={productos}/> 
+                    
             }
+            
         </>
     )
 }

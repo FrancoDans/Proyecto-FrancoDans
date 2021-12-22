@@ -12,7 +12,9 @@ export const ItemList = ({items}) => {
             <hr/>
             <Row>
                 {items.map((prod) => <Item key={prod.id} {...prod}/>)}
+                
             </Row>
+            
         </Container>
     )
 }

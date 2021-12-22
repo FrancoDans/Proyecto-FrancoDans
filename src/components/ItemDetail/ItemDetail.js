@@ -13,15 +13,15 @@ export const ItemDetail = ({id, name, img, desc, price, category, stock}) => {
     
     const [cantidad, setCantidad] = useState(0)
     
-    const handleVolver = () => {
+    const volver = () => {
         navigate(-1)
     }
 
-    const handleVolverInicio = () => {
+    const volverInicio = () => {
         navigate('/')
     }
 
-    const handleAgregar = () => {
+    const agregar = () => {
         if (cantidad > 0) {
             agregarAlCarrito({
                 id,
@@ -50,13 +50,13 @@ export const ItemDetail = ({id, name, img, desc, price, category, stock}) => {
                             max={stock} 
                             cantidad={cantidad} 
                             setCantidad={setCantidad}
-                            onAdd={handleAgregar}
+                            onAdd={agregar}
                         />
-                    :   <Link to="/cart" className="btn btn-success my-3">Finalizar compra</Link>
+                    :   <Link to="/collection" className="btn btn-success my-3">Finalizar compra </Link>
             }
             <br/>
-            <button className="btn btn-primary" onClick={handleVolver}>Volver</button>
-            <button className="btn btn-outline-primary" onClick={handleVolverInicio}>Volver al inicio</button>
+            <button className="btn btn-primary" onClick={volver}>Volver</button>
+            <button className="btn btn-outline-primary" onClick={volverInicio}>Volver al inicio</button>
         </div>
     )
 }

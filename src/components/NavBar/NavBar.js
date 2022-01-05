@@ -15,9 +15,9 @@ export const NavBar = () => {
 
         <nav>
             <ul>
-                <li><Link to="productos/nike">Nike</Link></li>
-                <li><Link to="productos/puma">Puma</Link></li>
-                <li><Link to="productos/adidas">Adidas</Link></li>
+                <li><Link to="productos/Nike">Nike</Link></li>
+                <li><Link to="productos/Puma">Puma</Link></li>
+                <li><Link to="productos/Adidas">Adidas</Link></li>
             </ul>
         </nav>
         

@@ -10,6 +10,7 @@ import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetail
 import { ItemListContainer } from './components/ItemListContainer/ItemListContainer';
 import { CartView } from './components/CartView/CartView';
 import { ItemCollection } from './components/itemCollection/itemCollection';
+import { Checkout } from './components/Checkout/Checkout';
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
               <Route path="/detail/:itemId" element={ <ItemDetailContainer />} />
               <Route path="/cart" element={ <CartView /> } />
               <Route path="/collection" element={ <ItemCollection /> } />
+              <Route path="/checkout" element={ <Checkout/> } />
               <Route path="*" element={ <Navigate to="/" /> } />
             </Routes> 
 

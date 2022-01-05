@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { BsFillTrashFill } from 'react-icons/bs'
 import { CartContext } from '../../context/CartContext'
 
-export const CartItem = ({name, price,img, cantidad, id}) => {
+export const CartItem = ({name, price, category, img, cantidad, id}) => {
 
     const {removerDelCarrito} = useContext(CartContext)
 
@@ -12,9 +12,10 @@ export const CartItem = ({name, price,img, cantidad, id}) => {
             <img src={img} alt={name} style={{width: "10rem"}}/>
             <p>Precio: ${price}</p>
             <p>Cantidad: {cantidad}</p>
+            <p>Marca: {category}</p>
             <button 
                 className="btn btn-danger"
-                onClick={() => { removerDelCarrito(id) }}
+                onClick={() => {removerDelCarrito(id)}}
             >
                 <BsFillTrashFill/>
             </button>

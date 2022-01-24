@@ -15,7 +15,7 @@ export const CartItem = ({name, price, category, img, cantidad, id}) => {
             <p>Marca: {category}</p>
             <button 
                 className="btn btn-danger"
-                onClick={() => {removerDelCarrito(id)}}
+                onClick={() => { removerDelCarrito(id) }}
             >
                 <BsFillTrashFill/>
             </button>
